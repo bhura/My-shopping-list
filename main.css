@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+button, input[type="text" ], input[type="number"] {
+  padding: .8em;
+    border: none;
+    border-radius: 5px;
+    background: #ebeced;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+label {
+  font-size: 1.5em;
+  width: 20%;
+}
+#shopping-list-item {
+  width: 250px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 5em auto;
+  height: auto;
+  border-radius: 10px;
+  background: url('Background-Images.jpg') no-repeat;
+  background-size: cover;
+  overflow: auto;
+
+}
+div.app-header {
+
+  text-align: center;
+
+}
+.list-item-container{
+  border-radius: 4px;
+  background-color: rgb(49, 50, 53);
+  width: 90%;
+  margin: 5px auto;
+  padding:1px;
+}
+.add-item-container{
+  display: none;
+  padding: 1px;
+}
+.category {
+  background-color: rgb(12, 131, 155);
+  margin: 0px;
+  padding: 10px;
+}
+.app-footer {
+  background-color: rgb(49, 50, 53);
+  padding: 10px;
+  width: 100%;
+  margin-top: 20px;
+}
+.delet-btn {
+  float: left;
+}
+.add-btn {
+  float: right;
+}
+div.app-header h1{
+  background-color: rgb(49, 50, 53);
+  padding:1.5em;
+  margin-top: 0px;
+}
+.light-font {
+  color: #fff;
+}
+.item-list{
+  list-style: none;
+  padding-left:0;
+  width: 95%;
+  margin: 10px auto;
+  padding: 5px;
+
+}
+.item-status{
+  float: right;
+  /* Double-sized Checkboxes */
+ -ms-transform: scale(1.8); /* IE */
+ -moz-transform: scale(1.8); /* FF */
+ -webkit-transform: scale(1.8); /* Safari and Chrome */
+ -o-transform: scale(1.8); /* Opera */
+ padding: 10px;
+}
+
+
+.item-list  li {
+  margin-bottom: 10px;
+  border: 1px solid grey;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#selectCat{
+  padding: .8em;
+border: none;
+border-radius: 5px;
+background: #ebeced;
+}
+.checked{
+  color: gray;
+}
+.quantity {
+  margin-left: 2em;
+  padding-left: 2em;
+  width: 20%;
+  text-align: center;
+}
+/*Display error message*/
+.error {
+  width: 95%;
+  margin: 1em auto;
+  background-color: rgb(216, 127, 121);
+  padding: 1em;
+  border-radius: 5px;
+  border: 1px solid rgb(122, 10, 2);
+  display: none;
+}
+.error p {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: rgb(122, 10, 2);
+}
+/*Display sucess message*/
+.sucess {
+  width: 95%;
+  margin: 1em auto;
+  background-color: rgb(104, 186, 121);
+  padding: 1em;
+  border-radius: 5px;
+  border: 1px solid rgb(7, 66, 20);
+  display: none;
+}
+.sucess p {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: rgb(7, 66, 20);
+}
+
+/* css clear*/
+.clearl-fix {
+content: "";
+ display: table;
+ clear: both;
+}

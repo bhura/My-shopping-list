@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Shopping List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <div class="container item-container " >
+    <div class="app-header">
+      <h1 class="light-font">My Shopping List</h1>
+    </div>
+
+    <div id="displayItem" class="list-item-container light-font">
+      <h3 class="category">Category</h3>
+      <ul class="item-list">
+        <li> Potato <input type="checkbox" class="item-status checked " value="1"></li>
+        <li> Milk <input type="checkbox" class="item-status" value="1"></li>
+        <li> Banana <input type="checkbox" checked class="item-status" value="1"></li>
+      </ul>
+      <h3 class="category">Category</h3>
+      <ul class="item-list">
+        <li> Potato <input type="checkbox" class="item-status checked " value="1"></li>
+        <li> Milk <input type="checkbox" class="item-status" value="1"></li>
+        <li> Banana <input type="checkbox" checked class="item-status" value="1"></li>
+      </ul>
+    </div>
+
+
+
+
+    <div class="app-footer clearl-fix">
+      <button class="delet-btn" title="Delete Selected items">Delete</button>
+      <button class="add-btn">Add</button>
+    </div>
+  </div>
+  <!-- End contatiner  -->
+  <div class="container add-item-container" >
+    <div class="app-header">
+      <h1 class="light-font">Add Shopping Item</h1>
+    </div>
+
+    <div class="list-item-container light-font">
+      <div class="error">
+            <p> error message </p>
+      </div>
+      <div class="sucess">
+        <p> success Message </p>
+      </div>
+      <form action="#" method="post">
+        <ul class="item-list">
+          <li>
+            <label for="name">Item Name</label>
+            <input type="text" id="name" name="itemName" placeholder="eg. Apple">
+
+          </li>
+          <li>
+            <label for="amount">Amount </label>
+            <input type="number" name="amount" size="10" id="amount">
+            <input type="radio" name="quantity" checked value="Kg" id="quantity1">
+            <label for="quantity1">Kg</label>
+            <input type="radio" name="quantity" value="L" id="quantity2">
+            <label for="quantity2">L</label>
+            <input type="radio" name="quantity" value="PCS" id="quantity3">
+            <label for="quantity3">Pcs</label>
+           </li>
+          <li>
+            <label for="selectCat"> Category </label>
+            <select id="selectCat" name="selectCat">
+              <option value="dairy">Dairy</option>
+              <option value="drinks">Drinks</option>
+              <option value="fruits">Fruits</option>
+              <option value="Vegetable">Vegetables</option>
+              <option value="meat">Meat</option>
+              <option value="fastFoot">fastFood</option>
+              <option value="other">other</option>
+            </select>
+           </li>
+        </ul>
+      </form>
+    </div>
+
+
+
+
+    <div class="app-footer clearl-fix">
+      <button class="show-list-btn">show List</button>
+      <button id="addListBtn" class="add-btn">Add It</button>
+    </div>
+  </div>
+  <!--End add Item Container  -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="app.js" ></script>
+</body>
+</html>
